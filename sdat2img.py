@@ -126,8 +126,8 @@ if __name__ == '__main__':
     except IndexError:
         print('\nUsage: sdat2img.py <transfer_list> <system_new_file> [system_img]\n')
         print('    <transfer_list>: transfer list file')
-        print('    <system_new_file>: system new dat file')
-        print('    [system_img]: output system image\n\n')
+        print('    <vendor_new_file>: vendor new dat file')
+        print('    [vendor_img]: output vendor image\n\n')
         print('Visit xda thread for more information.\n')
         try:
             input = raw_input
@@ -138,6 +138,6 @@ if __name__ == '__main__':
     try:
         OUTPUT_IMAGE_FILE = str(sys.argv[3])
     except IndexError:
-        OUTPUT_IMAGE_FILE = 'system.img'
+        OUTPUT_IMAGE_FILE = 'vendor.img'
 
     main(TRANSFER_LIST_FILE, NEW_DATA_FILE, OUTPUT_IMAGE_FILE)
