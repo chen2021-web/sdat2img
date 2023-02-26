@@ -124,7 +124,7 @@ if __name__ == '__main__':
         TRANSFER_LIST_FILE = str(sys.argv[1])
         NEW_DATA_FILE = str(sys.argv[2])
     except IndexError:
-        print('\nUsage: sdat2img.py <transfer_list> <system_new_file> [system_img]\n')
+        print('\nUsage: sdat2img.py <transfer_list> <vendor_new_file> [vendor_img]\n')
         print('    <transfer_list>: transfer list file')
         print('    <vendor_new_file>: vendor new dat file')
         print('    [vendor_img]: output vendor image\n\n')
